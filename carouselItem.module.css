@@ -1,0 +1,67 @@
+.carouselItem {
+  position: relative;
+  transition: opacity 0.5s ease;
+}
+
+.carouselItem[data-faded='true'] {
+  opacity: 0.3;
+}
+
+.title {
+  font-family: var(--heading-font-family);
+  font-weight: 300;
+  font-size: 3.6rem;
+  line-height: 1;
+  margin-bottom: 1rem;
+  -webkit-font-smoothing: antialiased;
+}
+
+.title a {
+  color: var(--white);
+}
+
+section[data-background-type='Light'] .title a {
+  color: var(--navyBlue);
+}
+
+.subtitle {
+  margin-bottom: 1rem;
+  font-family: var(--heading-font-family);
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1;
+  letter-spacing: 0.2rem;
+  -webkit-font-smoothing: antialiased;
+}
+
+.text {
+  font-family: var(--default-font-family);
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  -webkit-font-smoothing: antialiased;
+}
+
+.image {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.image img {
+  display: block;
+}
+
+.carouselItem[data-carousel-type='timeline'] .image:before {
+  content: '';
+  width: 1px;
+  height: 400px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: var(--mischka);
+}
+
+.arrow {
+  margin-left: 0;
+}

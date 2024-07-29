@@ -1,0 +1,102 @@
+@value smallonly, medium, large from '../../../assets/media-queries.module.css';
+
+.intro {
+  padding: 8rem 2rem 4rem;
+}
+
+@media (medium) {
+  .intro {
+    padding: 12rem 4rem 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 4rem;
+  }
+}
+
+@media (large) {
+  .intro {
+    padding: 0;
+    gap: 0;
+  }
+}
+
+.introText {
+  padding-bottom: 4rem;
+}
+
+@media (medium) {
+  .introText {
+    padding-bottom: 0;
+  }
+}
+
+@media (large) {
+  .introText {
+    flex: 0 0 50%;
+    padding: 12rem 0 8rem;
+    border-right: 1px solid var(--mischka);
+  }
+  .introText > * {
+    max-width: 40rem;
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+@media (large) {
+  .nav {
+    padding-bottom: 8rem;
+  }
+}
+
+.main {
+  padding: 0 0 8rem 2rem;
+}
+
+@media (medium) {
+  .main {
+    padding: 0 0 8rem 4rem;
+  }
+}
+
+@media (large) {
+  .main {
+    padding: 0 0 8rem;
+  }
+}
+
+.carouselContainer {
+  overflow: hidden;
+  border-top: 1px solid var(--mischka);
+  padding-top: 8rem;
+}
+
+@media (smallonly) {
+  .carouselContainer[data-carousel-type='content'] {
+    padding-top: 0;
+    border: 0;
+  }
+}
+
+.carousel {
+  touch-action: none;
+}
+
+.carouselItems {
+  display: flex;
+  gap: 4rem;
+}
+
+.carousel img {
+  touch-action: none;
+  pointer-events: none;
+}
+
+.item {
+  flex: 0 0 22rem;
+}
